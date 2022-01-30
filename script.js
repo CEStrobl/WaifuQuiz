@@ -415,15 +415,15 @@ let waifu27 = {
 };
 
 let waifu28 = {
-  img: "img/femalePinkPink1C.png",
+  img: "img/cutekitten.png",
   choice: "none",
-  hColor: "pink",
-  hBangs: "point",
-  hLength: "medium",
+  hColor: "blue",
+  hBangs: "open",
+  hLength: "short",
   hTexture: "wavy",
-  eColor: "pink",
-  sAge: "mature",
-  sPersona: "hot",
+  eColor: "blue",
+  sAge: "young",
+  sPersona: "cute",
 };
 
 let waifu29 = {
@@ -499,15 +499,15 @@ let waifu34 = {
 };
 
 let waifu35 = {
-  img: "img/femalePinkRed10C.png",
+  img: "img/blue.png",
   choice: "none",
-  hColor: "pink",
-  hBangs: "point",
+  hColor: "blue",
+  hBangs: "side",
   hLength: "long",
-  hTexture: "straight",
-  eColor: "red",
-  sAge: "mature",
-  sPersona: "hot",
+  hTexture: "wavy",
+  eColor: "blue",
+  sAge: "mid",
+  sPersona: "beautiful",
 };
 
 let waifu36 = {
