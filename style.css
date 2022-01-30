@@ -1,0 +1,254 @@
+html, body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    height:100%;
+    transition-duration: 0.8s;
+}
+
+a{
+    color:unset;
+    text-decoration: none;
+}
+
+
+.topnav .title {
+    float: left;
+    padding: 15px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.topnav {
+    
+    position:sticky;
+    top: 0;
+    padding: 20px;
+    margin:0%;
+    
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    color: rgb(133, 27, 80);
+    /* background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%); */
+    background-color:lightpink;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.topnav .block {
+    float: right;
+    padding: 15px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.topnav .block:hover {
+    background-color: rgb(181, 0, 237);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+
+.leftGroup {
+    flex: 1;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.rightGroup {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+  
+.green {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #4CAF50;
+}
+  
+.green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.blue {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+  
+.blue:hover {
+    background-color: #008CBA;
+    color: white;
+}
+  
+.red {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+  
+.red:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.black {
+    background-color: white;
+    color: black;
+    border: 2px solid #222222;
+}
+  
+.black:hover {
+    background-color: #222222;
+    color: white;
+}
+
+
+
+
+.flex{
+    display:flex;
+    transition-duration: 0.4s;
+}
+
+
+.main{
+    align-items: center;
+    flex-direction: column;
+}
+
+.page{
+    height: 78.3%;
+}
+
+.option{
+    font-size: x-large;
+    display: flex;
+    color:white;
+    background-color: #222222;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+
+
+.arrow {
+    background-color: #d6d6d6; /* Green */
+    border: none;
+    color: rgb(138, 138, 138);
+    padding: 16px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #808080; /* Green */
+    color: rgb(41, 41, 41);
+}
+
+
+.option {
+    background-color: #d6d6d600; /* Green */
+    border: none;
+    color: rgb(138, 138, 138);
+    padding: 16px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #808080; /* Green */
+    color: rgb(41, 41, 41);
+}
+
+.select {
+    background-color: #dfd659; /* Green */
+    color: rgb(41, 41, 41);
+}
+.select:hover {
+    background-color: #dfd659; /* Green */
+    color: rgb(41, 41, 41);
+}
+
+input {
+    position: relative;
+    background-color: #bacde7; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+
+#seek{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+.op{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+h3{
+    margin-bottom: 20px;
+}
+
+img{
+    height: 300px;
+}
