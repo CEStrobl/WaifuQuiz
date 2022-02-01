@@ -30,9 +30,9 @@ a{
     align-items: center;
     vertical-align: middle;
 
-    color: rgb(133, 27, 80);
+    color: #AF5079;
     /* background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%); */
-    background-color:lightpink;
+    background-color:#EEA5C5;
     text-transform: uppercase;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -252,3 +252,63 @@ h3{
 img{
     height: 300px;
 }
+
+
+
+.myProgress {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: #D5F5F1;
+    display: flex;
+}
+.myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #1B998B;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    vertical-align: middle;
+}
+
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #1B998B;
+
+}
+
+#hblack{background-color: #222222;}
+#hbrown{background-color: #5f3d10;}
+#hblonde{background-color: #f1b85b;}
+#horange{background-color: #c25b17;}
+#hblue{background-color: #1673a8;}
+#hpurple{background-color: #593395;}
+#hpink{background-color: #bd1c95;}
+
+#hwavy{background-color: #a81889;}
+#hstraight{background-color: #32aa22;}
+
+#hlong{background-color: #4c2679;}
+#hmedium{background-color: #2b509e;}
+#hshort{background-color: #14a2a7;}
+
+#hopen{background-color: #119558;}
+#hside{background-color: #c5c209;}
+#hpoint{background-color: #b96a0f;}
+
+#syoung{background-color: #492bad;}
+#smiddle{background-color: #800e8f;}
+#smature{background-color: #a30c0c;}
+
+#ebrown{background-color: #6e500e;}
+#ered{background-color: #8b0f0f;}
+#eyellow{background-color: #e4d33b;}
+#egreen{background-color: #148019;}
+#eblue{background-color: #1e53b4;}
+#epurple{background-color: #5e2d9e;}
+#epink{background-color: #9c2392;}
+
+#scute{background-color: #ca45d6;}
+#sbeauty{background-color: #175c94;}

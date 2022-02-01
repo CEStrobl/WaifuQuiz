@@ -1,115 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Waifu Quiz</title>
-</head>
-<body>
-    <div class="topnav flex"style="margin:0px;">
-        <div class="leftGroup">
-            <div class="title">Waifu Quiz 1.0.1</div>
-        </div>
-        <div class="rightGroup">
-            <button class="button red"id="reset" onclick="location.reload()">Reset</button>
-        </div>
+  </head>
+  <body>
+    <div class="topnav flex" style="margin: 0px">
+      <div class="leftGroup">
+        <div class="title">Waifu Quiz 1.1.1</div>
+      </div>
+      <div class="rightGroup">
+        <button class="button red" id="reset" onclick="location.reload()">
+          Reset
+        </button>
+      </div>
     </div>
-    
-<div  style="margin:30px;">
-    
-    <!-- Start -->
-    <div class="flex main" id="start">
+
+    <div style="margin: 30px">
+      <!-- Start -->
+      <div class="flex main" id="start">
         <h1>Waifu Quiz</h1>
-        <button class="button blue" onclick="showThreeElement('0', 'op', 'seek');">Start</button>
-    </div>
+        <button
+          class="button blue"
+          onclick="showThreeElement('0', 'op', 'seek');"
+        >
+          Start
+        </button>
+      </div>
 
-    <div class="flex main" id="0"  style="display: none;">
-        <img id="currentImg" src="" alt="">
-        
-    </div>
+      <div class="flex main" id="0" style="display: none">
+        <div
+          class="flex main"
+          style="
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+          "
+        >
+          <span id="current"></span>/<span id="max"></span>
+        </div>
+        <div class="myProgress" style="width: 50%">
+          <div class="myBar" id="myBar"></div>
+        </div>
+        <br />
+        <img id="currentImg" src="" alt="" />
+      </div>
 
-    
-    <div class="op" id ="op" style="display: none;">
-        <button class="option" id="hate"    onclick="select(display, 'hate'); seek('next')">😣</button>
-        <button class="option" id="dislike" onclick="select(display, 'dislike'); seek('next')">😒</button>
-        <button class="option" id="eh"      onclick="select(display, 'eh'); seek('next')">😐</button>
-        <button class="option" id="like"    onclick="select(display, 'like'); seek('next')">😊</button>
-        <button class="option" id="love"    onclick="select(display, 'love'); seek('next')">😍</button>
-    </div>
+      <div class="op" id="op" style="display: none">
+        <button
+          class="option"
+          id="hate"
+          onclick="select(display, 'hate'); seek('next')"
+        >
+          😣
+        </button>
+        <button
+          class="option"
+          id="dislike"
+          onclick="select(display, 'dislike'); seek('next')"
+        >
+          😒
+        </button>
+        <button
+          class="option"
+          id="eh"
+          onclick="select(display, 'eh'); seek('next')"
+        >
+          😐
+        </button>
+        <button
+          class="option"
+          id="like"
+          onclick="select(display, 'like'); seek('next')"
+        >
+          😊
+        </button>
+        <button
+          class="option"
+          id="love"
+          onclick="select(display, 'love'); seek('next')"
+        >
+          😍
+        </button>
+      </div>
 
-    <div id="seek" style="display: none;">
+      <div id="seek" style="display: none">
         <!-- <button class="arrow" onclick="seek('back')"><</button>
         <div class="arrow" style="background-color: transparent;"></div>
         <button class="arrow" onclick="seek('next')">></button> -->
-    </div>
+      </div>
 
-    <div class="flex main" id="results"  style="
-    
-    display: none;
-    opacity: 1;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    ">
-        <div>
+      <div class="flex main" id="results" style="display: none">
+        <div class="flex main" style="display: flex; width: 100%">
+          <h3>Hair Color</h3>
+          <div class="myProgress">
+            <div class="myBar" id="hblack">Black</div>
+            <div class="myBar" id="hbrown">Brown</div>
+            <div class="myBar" id="hblonde">Blonde</div>
+            <div class="myBar" id="horange">Orange</div>
+            <div class="myBar" id="hpink">Pink</div>
+            <div class="myBar" id="hpurple">Purple</div>
+            <div class="myBar" id="hblue">Blue</div>
+          </div>
+          <h3>Hair Texture</h3>
+          <div class="myProgress">
+            <div class="myBar" id="hwavy">Wavy</div>
+            <div class="myBar" id="hstraight">Straight</div>
+          </div>
+          <h3>Hair Length</h3>
+          <div class="myProgress">
+            <div class="myBar" id="hlong">Long</div>
+            <div class="myBar" id="hmedium">Medium</div>
+            <div class="myBar" id="hshort">Short</div>
+          </div>
+          <h3>Bangs Style</h3>
+          <div class="myProgress">
+            <div class="myBar" id="hopen">Open</div>
+            <div class="myBar" id="hside">Side</div>
+            <div class="myBar" id="hpoint">Pointed</div>
+          </div>
+          <h3>Eye Color</h3>
+          <div class="myProgress">
+            <div class="myBar" id="ebrown">Brown</div>
+            <div class="myBar" id="ered">Red</div>
+            <div class="myBar" id="eyellow">Yellow</div>
+            <div class="myBar" id="egreen">Green</div>
+            <div class="myBar" id="eblue">Blue</div>
+            <div class="myBar" id="epurple">Purple</div>
+            <div class="myBar" id="epink">Pink</div>
+          </div>
+          <h3>Age</h3>
+          <div class="myProgress">
+            <div class="myBar" id="syoung">Young</div>
+            <div class="myBar" id="smiddle">Middle</div>
+            <div class="myBar" id="smature">Mature</div>
+          </div>
+          <h3>Style</h3>
+          <div class="myProgress">
+            <div class="myBar" id="scute">Cute</div>
+            <div class="myBar" id="sbeauty">Beautiful</div>
+          </div>
+        </div>
+        <div
+          class="flex main"
+          style="
+            display: flex;
+            opacity: 1;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 100%;
+          "
+        >
+          <div>
             <h3>Hair Color</h3>
-            Black: <span id="reshblack"></span> <br>
-            Brown: <span id="reshbrown"></span> <br>
-            Blonde: <span id="reshblonde"></span> <br>
-            Orange: <span id="reshorange"></span> <br>
-            Blue: <span id="reshblue"></span> <br>
-            Purple: <span id="reshpurple"></span> <br>
-            Pink/Red: <span id="reshpink"></span> <br>
+            Black: <span id="reshblack"></span> <br />
+            Brown: <span id="reshbrown"></span> <br />
+            Blonde: <span id="reshblonde"></span> <br />
+            Orange: <span id="reshorange"></span> <br />
+            Blue: <span id="reshblue"></span> <br />
+            Purple: <span id="reshpurple"></span> <br />
+            Pink/Red: <span id="reshpink"></span> <br />
 
             <h3>Hair Texture</h3>
-            Wavy: <span id="reshwavy"></span> <br>
-            Straight: <span id="reshstraight"></span> <br>
-
-        </div>
-        <div>
-
+            Wavy: <span id="reshwavy"></span> <br />
+            Straight: <span id="reshstraight"></span> <br />
+          </div>
+          <div>
             <h3>Hair Length</h3>
-            Long: <span id="reshlong"></span> <br>
-            Medium: <span id="reshmedium"></span> <br>
-            Short: <span id="reshshort"></span> <br>
+            Long: <span id="reshlong"></span> <br />
+            Medium: <span id="reshmedium"></span> <br />
+            Short: <span id="reshshort"></span> <br />
 
             <h3>Bangs Style</h3>
-            Open: <span id="reshopen"></span> <br>
-            Side: <span id="reshside"></span> <br>
-            Point: <span id="reshpoint"></span> <br>
+            Open: <span id="reshopen"></span> <br />
+            Side: <span id="reshside"></span> <br />
+            Point: <span id="reshpoint"></span> <br />
 
             <h3>Age</h3>
-            Mature: <span id="resmature"></span> <br>
-            Mid: <span id="resmid"></span> <br>
-            Young: <span id="resyoung"></span> <br>
-
-        </div>
-        <div>
+            Mature: <span id="resmature"></span> <br />
+            Mid: <span id="resmid"></span> <br />
+            Young: <span id="resyoung"></span> <br />
+          </div>
+          <div>
             <h3>Eye Color</h3>
-            Brown: <span id="resbrown"></span> <br>
-            Red: <span id="resred"></span> <br>
-            Yellow: <span id="resyellow"></span> <br>
-            Green: <span id="resgreen"></span> <br>
-            Blue: <span id="resblue"></span> <br>
-            Purple: <span id="respurple"></span> <br>
-            Pink: <span id="respink"></span> <br>
+            Brown: <span id="resbrown"></span> <br />
+            Red: <span id="resred"></span> <br />
+            Yellow: <span id="resyellow"></span> <br />
+            Green: <span id="resgreen"></span> <br />
+            Blue: <span id="resblue"></span> <br />
+            Purple: <span id="respurple"></span> <br />
+            Pink: <span id="respink"></span> <br />
 
-
-            
-
-            <h3>Persona</h3>
-            Cute: <span id="rescute"></span> <br>
-            Beautiful: <span id="resbeautiful"></span> <br>
-            Hot: <span id="reshot"></span> <br>
-
+            <h3>Style</h3>
+            Cute: <span id="rescute"></span> <br />
+            Beautiful: <span id="resbeauty"></span> <br />
+          </div>
         </div>
-            
+      </div>
     </div>
-</div>
+  </body>
 
-</body>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </html>

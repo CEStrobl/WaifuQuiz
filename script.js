@@ -109,7 +109,7 @@ let waifu2 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu3 = {
@@ -139,7 +139,7 @@ let waifu4 = {
 let waifu5 = {
   img: "img/femaleBlondePurple3A.png",
   choice: "none",
-  hColor: "white",
+  hColor: "blonde",
   hBangs: "point",
   hLength: "long",
   hTexture: "straight",
@@ -157,7 +157,7 @@ let waifu6 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu7 = {
@@ -169,7 +169,7 @@ let waifu7 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "mature",
-  sPersona: "beautiful",
+  sPersona: "cute",
 };
 
 let waifu8 = {
@@ -197,15 +197,15 @@ let waifu9 = {
 };
 
 let waifu10 = {
-  img: "img/femaleBlueBlue5C.png",
+  img: "img/purplecat.png",
   choice: "none",
-  hColor: "blue",
-  hBangs: "side",
+  hColor: "purple",
+  hBangs: "open",
   hLength: "long",
   hTexture: "wavy",
-  eColor: "blue",
+  eColor: "green",
   sAge: "mid",
-  sPersona: "beautiful",
+  sPersona: "cute",
 };
 
 let waifu11 = {
@@ -231,7 +231,7 @@ let waifu12 = {
   hTexture: "wavy",
   eColor: "purple",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu13 = {
@@ -255,7 +255,7 @@ let waifu14 = {
   hTexture: "wavy",
   eColor: "brown",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu15 = {
@@ -291,19 +291,19 @@ let waifu17 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu18 = {
-  img: "img/femaleBrownRed1C.png",
+  img: "img/femaleBrownYellow0A.png",
   choice: "none",
   hColor: "brown",
-  hBangs: "side",
+  hBangs: "point",
   hLength: "long",
-  hTexture: "wavy",
-  eColor: "red",
-  sAge: "mature",
-  sPersona: "hot",
+  hTexture: "straight",
+  eColor: "yellow",
+  sAge: "mid",
+  sPersona: "cute",
 };
 
 let waifu19 = {
@@ -319,14 +319,14 @@ let waifu19 = {
 };
 
 let waifu20 = {
-  img: "img/femaleBrownYellow0A.png",
+  img: "img/femaleOrangeOrange1F.png",
   choice: "none",
-  hColor: "brown",
-  hBangs: "point",
-  hLength: "long",
-  hTexture: "straight",
+  hColor: "blonde",
+  hBangs: "side",
+  hLength: "medium",
+  hTexture: "wavy",
   eColor: "yellow",
-  sAge: "mid",
+  sAge: "mature",
   sPersona: "beautiful",
 };
 
@@ -375,7 +375,7 @@ let waifu24 = {
   hTexture: "straight",
   eColor: "blue",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu25 = {
@@ -447,7 +447,7 @@ let waifu30 = {
   hTexture: "wavy",
   eColor: "red",
   sAge: "young",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu31 = {
@@ -483,7 +483,7 @@ let waifu33 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "young",
-  sPersona: "hot",
+  sPersona: "cute",
 };
 
 let waifu34 = {
@@ -531,7 +531,7 @@ let waifu37 = {
   hTexture: "straight",
   eColor: "pink",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu38 = {
@@ -591,7 +591,7 @@ let waifu42 = {
   hTexture: "straight",
   eColor: "pink",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu43 = {
@@ -603,7 +603,7 @@ let waifu43 = {
   hTexture: "straight",
   eColor: "yellow",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 let waifu44 = {
@@ -615,7 +615,7 @@ let waifu44 = {
   hTexture: "straight",
   eColor: "red",
   sAge: "mature",
-  sPersona: "hot",
+  sPersona: "beautiful",
 };
 
 
@@ -654,9 +654,8 @@ function checkDupes(){
         // if (w1.sCat === w2.sCat) {match++; commonalities+= "Cat, "}
         if (w1.sPersona === w2.sPersona) {match++; commonalities+= "Persona, "}
 
-        if(Math.floor((match/13)*100) > 75) {
-          console.log("\n", w1.img, " is ", Math.floor((match/13)*100), "% similar to ", w2.img)
-          console.log("Commonalities are ", commonalities)
+        if(Math.floor((match/13)*100) > 90) {
+          //console.log( w1.img, " is ", Math.floor((match/13)*100), "% similar to ", w2.img,"\n","Commonalities are ", commonalities, "\n","\n","\n",)
         }
         
       }
@@ -737,12 +736,7 @@ let result = {
 
   // Style Persona
   sCute: 0,
-  sBeautiful: 0,
-  sHot: 0,
-
-  // Style Cat
-  sCat: 0,
-  sNonCat: 0,
+  sBeauty: 0,
 };
 
 let waifuAttributes = [
@@ -765,7 +759,6 @@ let resultLetter = [
   "hGreen",
   "hOrange",
   "hPurple",
-  "hWhite",
   "hOpen",
   "hSide",
   "hPoint",
@@ -785,10 +778,7 @@ let resultLetter = [
   "sMid",
   "sYoung",
   "sCute",
-  "sBeautiful",
-  "sHot",
-  "sCat",
-  "sNonCat",
+  "sBeauty",
 ];
 
 let resultNoLetter = [
@@ -800,7 +790,6 @@ let resultNoLetter = [
   "Green",
   "Orange",
   "Purple",
-  "White",
   "Open",
   "Side",
   "Point",
@@ -821,19 +810,21 @@ let resultNoLetter = [
   "Young",
   "Cute",
   "Beautiful",
-  "Hot",
-  "Cat",
-  "NonCat",
 ];
 
 let emojis = ['hate', 'dislike', 'eh', 'like', 'love']
 
+document.getElementById('current').innerHTML = 0
+document.getElementById('max').innerHTML = waifus.length
+
 function select(a, b) {
   let x = waifus[a];
-  theLongWay(x, b)
-  
-
-  // addLoop(x.sCat)
+  if (x != undefined) {
+    theLongWay(x, b)
+    document.getElementById('current').innerHTML = a+1
+    let prog = document.getElementById("myBar")
+    prog.style.width = Math.floor(((a+1)/waifus.length)*100)+'%';
+  }
 }
 
 function imgUpdate() {
@@ -842,7 +833,11 @@ function imgUpdate() {
     updateResults()
     showElement('results')
   }
-  else {x.src = waifus[display].img;}
+  else {
+    if (waifus[display] != undefined) {
+      x.src = waifus[display].img;
+    }
+  }
 }
 
 
@@ -862,7 +857,6 @@ function theLongWay(x, b){
   if(x.hColor === "red") {result.hRed += a}
   if(x.hColor === "pink") {result.hPink += a}
   if(x.hColor === "orange") {result.hOrange += a}
-  if(x.hColor === "white") {result.hWhite += a}
   if(x.hColor === "purple") {result.hPurple += a}
 
   if(x.hLength === "long") {result.hLong += a}
@@ -892,15 +886,12 @@ function theLongWay(x, b){
   if(x.sAge === "young") {result.sYoung += a}
 
   if(x.sPersona === "cute") {result.sCute += a}
-  if(x.sPersona === "beautiful") {result.sBeautiful += a}
-  if(x.sPersona === "hot") {result.sHot += a}
-
-  if(x.sCat === true) {result.sCat += a}
-  if(x.sCat === false) {result.sNonCat += a}
+  if(x.sPersona === "beautiful") {result.sBeauty += a}
 
 }
 
 function updateResults(){
+  denegative()
   document.getElementById("reshblack").innerHTML = result.hBlack
   document.getElementById("reshbrown").innerHTML = result.hBrown
   document.getElementById("reshblonde").innerHTML = result.hBlonde
@@ -932,14 +923,105 @@ function updateResults(){
   document.getElementById("resmid").innerHTML = result.sMid
   document.getElementById("resyoung").innerHTML = result.sYoung
   document.getElementById("rescute").innerHTML = result.sCute
-  document.getElementById("resbeautiful").innerHTML = result.sBeautiful
-  document.getElementById("reshot").innerHTML = result.sHot
+  document.getElementById("resbeauty").innerHTML = result.sBeauty
+
+
+
+
+  let hColorMax = result.hBlack+result.hBrown+result.hBlonde
+  +result.hOrange+result.hBlue+result.hPurple+(result.hPink) + (result.hRed)
+  let hColor = 100/hColorMax
+  document.getElementById("hblack").style.width = ( result.hBlack*hColor)+"%"
+  document.getElementById("hbrown").style.width = ( result.hBrown*hColor)+"%"
+  document.getElementById("hblonde").style.width = ( result.hBlonde*hColor)+"%"
+  document.getElementById("horange").style.width = ( result.hOrange*hColor)+"%"
+  document.getElementById("hblue").style.width = ( result.hBlue*hColor)+"%"
+  document.getElementById("hpurple").style.width = ( result.hPurple*hColor)+"%"
+  document.getElementById("hpink").style.width = ( (result.hPink+result.hRed)*hColor)+"%"
+
+  let htexMax = result.hStraight+result.hWavy
+  let htex = 100/htexMax
+  document.getElementById("hstraight").style.width = ( result.hStraight*htex)+"%"
+  document.getElementById("hwavy").style.width = ( result.hWavy*htex)+"%"
+
+  let hlengMax = result.hLong+result.hMedium+ result.hShort
+  let hleng = 100/hlengMax
+  document.getElementById("hlong").style.width = ( result.hLong*hleng)+"%"
+  document.getElementById("hmedium").style.width = ( result.hMedium*hleng)+"%"
+  document.getElementById("hshort").style.width = ( result.hShort*hleng)+"%"
+
+  let hbangMax = result.hOpen+result.hPoint+result.hSide
+  let hbang = 100/hbangMax
+  document.getElementById("hopen").style.width = ( result.hOpen*hbang)+"%"
+  document.getElementById("hpoint").style.width = ( result.hPoint*hbang)+"%"
+  document.getElementById("hside").style.width = ( result.hSide*hbang)+"%"
+
+  let eColorMax = result.eRed+result.eYellow+result.eBlue+result.ePurple
+  +result.ePink+result.eBrown+ result.eGreen
+  let eColor = 100/eColorMax
+  document.getElementById("ered").style.width = ( result.eRed*eColor)+"%"
+  document.getElementById("eyellow").style.width = ( result.eYellow*eColor)+"%"
+  document.getElementById("eblue").style.width = ( result.eBlue*eColor)+"%"
+  document.getElementById("epurple").style.width = ( result.ePurple*eColor)+"%"
+  document.getElementById("epink").style.width = ( result.ePink*eColor)+"%"
+  document.getElementById("ebrown").style.width = ( result.eBrown*eColor)+"%"
+  document.getElementById("egreen").style.width = ( result.eGreen*eColor)+"%"
+
+  let sageMax = result.sMature+result.sMid+result.sYoung
+  let sage = 100/sageMax
+  document.getElementById("smature").style.width = ( result.sMature*sage)+"%"
+  document.getElementById("smiddle").style.width = ( result.sMid*sage)+"%"
+  document.getElementById("syoung").style.width = ( result.sYoung*sage)+"%"
+
+  let personaMax = result.sCute+result.sBeauty
+  let persona = 100/personaMax
+  document.getElementById("scute").style.width = ( result.sCute*persona)+"%"
+  document.getElementById("sbeauty").style.width = ( result.sBeauty*persona)+"%"
+
 }
 
 
 
-// y = document.getElementById(b);
-  // for (let i = 0; i < emojis.length; i++) {
-  //   document.getElementById(emojis[i]).classList.remove("select")
-  // }
-  // y.classList.add("select");
+function denegative() {
+  let nums = Object.values(result)
+
+  let min = Math.min(...nums)
+  if (min < 0) {
+
+    min*=-1
+    
+    result.hBlack += min
+    result.hBrown += min
+    result.hBlonde += min
+    result.hOrange += min
+    result.hBlue += min
+    result.hPurple += min
+    result.hPink += min
+    result.hRed += min
+  
+    result.hStraight += min
+    result.hWavy += min
+  
+    result.hLong += min
+    result.hMedium += min
+    result.hShort += min
+  
+    result.hOpen += min
+    result.hPoint += min
+    result.hSide += min
+  
+    result.eRed += min
+    result.eYellow += min
+    result.eBlue += min
+    result.ePurple += min
+    result.ePink += min
+    result.eBrown += min
+    result.eGreen += min
+  
+    result.sMature += min
+    result.sMid += min
+    result.sYoung += min
+    result.sCute += min
+    result.sBeauty += min
+  }
+}
